@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div{
+            padding: 10px;
+        }
+        h1{
+            font-size: 1.5em;
+            text-align: center;
+        }
+    /*DIREÇÃO*/
+
+         /*alinhado horizontal*/
+        div.conteiner{
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+        }
+        div.item{
+            background-color: blueviolet;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+        /*alinhado horizontal invertido */
+        div.conteiner1{
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        div.item1{
+            background-color: blueviolet;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+        }
+        /*alinhado coluna */
+        div.conteiner2{
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+        div.item2{
+            background-color: blueviolet;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+        }
+        /*alinhado coluna invertido */
+        div.conteiner3{
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        div.item3{
+            background-color: blueviolet;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+        }
+        /*alinhado usuando nowrap*/
+        div.conteiner4{
+            background-color: #ffffff;
+            display: flex;
+            flex-flow: row wrap;  /*++++++ UNICA LINHA SIMPLIFICADA AMPLIADA ++++++ */
+        }
+        div.item4{
+            background-color: blueviolet;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+         /*alinhado usuando wrap*/
+         div.conteiner5{
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        div.item5{
+            background-color: blueviolet;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+        /*alinhado usuando wrap*/
+        div.conteiner6{
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+        div.item6{
+            background-color: blueviolet;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhado Normal</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>Alinhado Invertido</h1>
+    <div class="conteiner1">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+        <div class="item1">D</div>
+        <div class="item1">E</div>
+        <div class="item1">F</div>
+        <div class="item1">G</div>
+    </div>
+    <h1>Alinhado Coluna</h1>
+    <div class="conteiner2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h1>Alinhado Coluna Invertido</h1>
+    <div class="conteiner3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+        <div class="item3">D</div>
+        <div class="item3">E</div>
+        <div class="item3">F</div>
+        <div class="item3">G</div>
+    </div>
+    <h1>Alinhando Reduzindo Conteúdos</h1>
+    <div class="conteiner4">
+        <div class="item4">Exemplo de bloco B</div>
+        <div class="item4">Exemplo de bloco C</div>
+        <div class="item4">Exemplo de bloco D</div>
+        <div class="item4">Exemplo de bloco E</div>
+        <div class="item4">Exemplo de bloco F</div>
+        <div class="item4">Exemplo de bloco A</div>
+        <div class="item4">Exemplo de bloco G</div>
+    </div>
+    <h1>Alinhando Quebrando Itens</h1>
+    <div class="conteiner5">
+        <div class="item5">Exemplo de bloco B</div>
+        <div class="item5">Exemplo de bloco C</div>
+        <div class="item5">Exemplo de bloco D</div>
+        <div class="item5">Exemplo de bloco E</div>
+        <div class="item5">Exemplo de bloco F</div>
+        <div class="item5">Exemplo de bloco A</div>
+        <div class="item5">Exemplo de bloco G</div>
+    </div>
+    <h1>Alinhado Quebrado Invertido</h1>
+    <div class="conteiner6">
+        <div class="item6">Exemplo de bloco B</div>
+        <div class="item6">Exemplo de bloco C</div>
+        <div class="item6">Exemplo de bloco D</div>
+        <div class="item6">Exemplo de bloco E</div>
+        <div class="item6">Exemplo de bloco F</div>
+        <div class="item6">Exemplo de bloco A</div>
+        <div class="item6">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
