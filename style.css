@@ -15,14 +15,35 @@ body{
         background-color: rgba(117, 25, 229, 0.502);
         color: white;
         padding: 15px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
     }
     header > h1{
         border: 1px dotted black;
         border-radius: 10px;
+        flex: 0 0 150px;
+    }
+    header > nav > a{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        text-decoration: none;
         text-align: center;
+    }
+    header > nav > a:hover{
+        background-color: white;
+        color: black;
+        transition: background-color .8s;
     }
     nav{
         border: 1px dotted black; 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
     }
     main{
         background-color: white;
