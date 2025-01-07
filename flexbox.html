@@ -116,6 +116,8 @@
             border: 1px solid black;
             text-align: center;
             flex: auto;
+            flex-shrink: 1;
+            flex-grow: 1;
         }
         div.conteiner8{
             background-color: #ffffff;
@@ -304,6 +306,99 @@
             text-align: center;
             padding: 50px;
         }
+        div.conteiner23{
+            background-color: #000000;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.conteiner24{
+            background-color: #000000;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 300px;
+        }
+        div.itemA{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            order: 5;
+        }
+        div.itemB{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            order: 2;
+        }
+        div.itemC{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            order: 0;
+        }
+        div.itemD{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            order: -9;
+        }
+        div.itemE{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            order: 1;
+        }
+        div.itemF{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            align-self: center;
+
+        }
+        div.itemG{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            align-self: flex-start;
+        }
+        div.itemH{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            align-self: self-end;
+        }
+        div.itemI{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+        div.itemJ{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            align-self: stretch;
+        }
+        div.conteiner25{
+            background-color: #000000;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item25{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
     </style>
 </head>
 <body>
@@ -437,7 +532,6 @@
         <div class="item12">Exemplo de bloco E</div>
         <div class="item12">Exemplo de bloco F</div>
         <div class="item12">Exemplo de bloco G</div>
-        <div class="item12">Exemplo H</div>
         </div>
     <h1>Usando Align-items stretch</h1>
     <div class="conteiner13">
@@ -562,6 +656,30 @@
         <div class="item22">I</div>
         <div class="item22">J</div>
         <div class="item22">K</div>
+    </div>    
+    <h1>Colocando "importância" nos itens - Order </h1>
+    <div class="conteiner23">
+        <div class="itemA">A</div>
+        <div class="itemB" style="align-self: flex-end;">B</div>
+        <div class="itemC">C</div>
+        <div class="itemD">D</div>
+        <div class="itemE">E</div>
+    </div>
+    <h1>Usando o ALign-self </h1>
+    <div class="conteiner24">
+        <div class="itemF">F</div>
+        <div class="itemG">G</div>
+        <div class="itemH">H</div>
+        <div class="itemI">I</div>
+        <div class="itemJ">J</div>
+    </div>
+    <h1>Usando o flex-basis </h1>
+    <div class="conteiner25">
+        <div class="item25">F</div>
+        <div class="item25">um conteudo</div>
+        <div class="item25">H</div>
+        <div class="item25">conteudo bem maior que ocupa mais espaço e muito mais</div>
+        <div class="item25">J</div>
     </div>
 </body>
 </html>
