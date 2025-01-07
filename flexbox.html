@@ -399,6 +399,39 @@
             text-align: center;
             flex-basis: 150px;
         }
+        div.conteiner26{
+            background-color: #000000;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        /*flex= flex-grow + flex-shirink + flex-basis*/
+        div.item26A{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            flex-grow:0 ;
+            flex-shrink:1;
+            /*flex: 0 1 150px*/
+        }
+        div.item26B{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            flex-grow:0 ;
+            flex-shrink:2 ;
+            /*flex: 2 0 150px*/
+        }
+        div.item26C{
+            background-color: rgb(10, 58, 214);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink:1 ;
+            /*flex: 1 2 150px*/
+        }
     </style>
 </head>
 <body>
@@ -681,5 +714,13 @@
         <div class="item25">conteudo bem maior que ocupa mais espaço e muito mais</div>
         <div class="item25">J</div>
     </div>
+    <h1>Usando o flex-basis=auto, flex-shrink=1 e flex-grow=0 <hr>flex = flex-grow + flex-shrink + flex-basis</h1>
+    <div class="conteiner26">
+        <div class="item26A">A</div>
+        <div class="item26B">B</div>
+        <div class="item26C">C</div>
+    </div>
+    <hr>
+    <h1>flex= 1 1 auto;</h1>
 </body>
 </html>
